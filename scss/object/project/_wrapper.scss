@@ -1,0 +1,36 @@
+@use "./../../foundation/variable" as *;
+
+
+//single page
+//-----------------------------
+.p-wrapper__single {
+    padding: 30px 20px 177px 20px;
+}
+
+@include breakpoint(tablet) {
+    .p-wrapper__single {
+        padding: 60px 60px 228px 60px;
+    }
+}
+@include breakpoint(tablet) {
+    .p-wrapper__single {
+        padding: 60px 62.5px 353px 62.5px;
+    }
+}
+
+// page
+//-----------------------------
+.p-wrapper__page {
+    padding: 30px 20px 177px 20px;
+}
+
+@include breakpoint(tablet) {
+    .p-wrapper__page {
+        padding: 60px 60px 228px 60px;
+    }
+}
+@include breakpoint(tablet) {
+    .p-wrapper__page {
+        padding: 60px 62.5px 353px 62.5px;
+    }
+}

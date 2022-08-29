@@ -1,0 +1,43 @@
+@use "./../../foundation/variable" as *;
+
+
+//single page
+//-----------------------------
+.c-item {
+    &__menu {
+    padding-left: 66px;
+    line-height: 2.3;
+    }
+    &__code {
+    padding: 50px 31.2px;
+    background-color: $color-lightgray;
+    margin-bottom: 30px;
+    }
+    &__table {
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid;
+    }
+    &__table th {
+        border: 1px solid;
+        padding: 28px 0 27px 30px;
+        width: 31.6%;
+        font-weight: inherit;
+    }
+    &__table td {
+        border: 1px solid;
+        padding: 28px 0 27px 30px;
+        width: 68.4%;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-item {
+        &__code {
+            margin-bottom: 60px;
+        }
+        &__table {
+            margin-bottom: 60px;
+        }
+    }
+}

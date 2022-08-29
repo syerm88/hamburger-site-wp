@@ -1,0 +1,37 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.p-map {
+    position: relative;
+    margin-top: 50px;
+    background-image: url(./../../../img/p-front-map.png);
+    background-color: #000000;
+    width: 100%;
+    height: auto; 
+    h2::after{
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 3px;
+        background-color: $color-white;
+        top: 102px;
+        left: 40px;
+        } 
+}
+
+@include breakpoint(pc) {
+    .p-map h2::after{
+                position: absolute;
+                content: "";
+                width: 70px;
+                height: 3px;
+                background-color: $color-white;
+                top: 190px;
+                left: 74px;
+            }
+        }
+    
+
+

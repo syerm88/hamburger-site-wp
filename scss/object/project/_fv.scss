@@ -1,0 +1,20 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.p-fv {
+    position: relative;
+    height: 285px;
+    img {
+        object-fit: cover;
+        height: inherit;
+        width: 100%;
+    }
+}
+
+@include breakpoint(pc) {
+    .p-fv {
+        height: 530px;
+    }
+}

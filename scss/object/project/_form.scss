@@ -1,0 +1,62 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.p-seach-form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.p-seach-form-keyword {
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    width: 230px;
+    height: 46px;
+    border-radius: 10px;
+    margin-left: 24px;
+    margin-right: 10px;
+    color: $color-gray;
+    background-color: $color-white;
+    input.seach {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+.search_box {
+    display: inline-block; 
+    position: relative;    
+    &::before {
+        content: "";           
+        width: 24px;          
+        height: 24px;         
+        background: url(/img/seach.png) no-repeat center center / auto 100%; 
+        display: inline-block; 
+        position: absolute;    
+        top: 11px;              
+        left: 36px;             
+    }
+    input {
+        padding: 3px 0 3px 3em; 
+    }
+}
+
+@include breakpoint(tablet) {
+    .p-seach-form-keyword {
+        width: 396px;
+    }
+    .p-seach-form {
+        justify-content: center;
+    }
+}
+
+@include breakpoint(pc) {
+    .p-seach-form {
+        margin-right: 21px;
+        padding-bottom: 0;
+    }
+}

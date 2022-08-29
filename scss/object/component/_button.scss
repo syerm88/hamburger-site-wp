@@ -1,0 +1,71 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.c-button {
+    width: 70px;
+    height:50px;
+    display: flex;
+    margin-left: auto;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-right: 16px;
+    right: 0;
+    font-family: "Roboto";
+    z-index: 20;
+    position: sticky;
+    span {
+      font-size: 2.5rem;
+      color: $color-gray;
+    }
+    &.is-open {
+        span {
+          display: none;
+        }     
+    }
+}
+
+@include breakpoint(pc) {
+  .c-button {
+    display: none;
+  }
+}
+
+//single page
+//-----------------------------
+.c-button__single {
+  width: 429px;
+  height: 104px;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(242, 237, 233);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+@include breakpoint(tablet) {
+  .c-button__single {
+    margin-bottom: 60px;
+  }
+}
+
+//page
+//-----------------------------
+.c-button__page {
+  width: 429px;
+  height: 104px;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(242, 237, 233);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+@include breakpoint(tablet) {
+  .c-button__page {
+    margin-bottom: 60px;
+  }
+}

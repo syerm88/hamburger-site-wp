@@ -1,0 +1,125 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.p-section__TakeOut {
+    position: relative;
+    background-image: url(./../../../img/front-page-main02.png); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 1199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.p-section__EatIn {
+    position: relative;
+    background-image: url(./../../../img/front-page-main03-sp.jpg); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-top: 15px;
+    min-height: 1199px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@include breakpoint(tablet) {
+    .p-section__TakeOut {
+        margin-right: 20px; 
+    }
+    .p-section__EatIn {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+@include breakpoint(pc) {
+    .p-section__TakeOut {
+        height: auto;
+        margin-right: 50px; 
+    }
+    .p-section__EatIn {
+        height: auto;
+        margin-left: 50px;
+    }
+}
+
+//archive page
+//-----------------------------
+.p-section__figure {
+    padding: 30px 19px 30px 22px
+}
+@include breakpoint(tablet) {
+    .p-section__figure {
+        padding: 36px 35px 30px 43px;
+    }
+}
+@include breakpoint(pc) {
+    .p-section__figure {
+        padding: 62px;
+    }
+}
+
+//single page
+//-----------------------------
+.p-section__text {
+    padding: 30px 20px 0 20px;
+    margin-bottom: 30px;
+    background-color: $color-lightgray;
+    &-quote {
+        padding: 30px 20px;
+    }
+}
+
+.p-section{
+    &__list{
+        font-size: 1.6rem;
+    }
+    &__list ol {
+        padding-left: 94px;
+        padding-bottom: 20px;
+        list-style: decimal;
+    }
+    &__list ol:nth-child( 2 ) {
+        padding-left: 105px;
+        text-decoration: unset;
+    }  
+    &__list ol:nth-child( 3 ) {
+        padding-bottom: 60px;
+    }
+}
+
+.p-section{
+    &__list ul {
+        padding-left: 94px;
+        padding-bottom: 20px;
+    }
+    &__list ul:nth-child( 5 ) {
+        padding-left: 105px;
+    }
+    &__list ul:nth-child( 6 ) {
+        padding-bottom: 30px;
+    }
+}
+
+.p-section__text a {
+    text-decoration: underline;
+}
+
+@include breakpoint(tablet) {
+    .p-section__text {
+        padding: 50px 60px 0 50px;
+        margin-bottom: 60px;
+        &-quote {
+            padding: 60px 0 50px 0;
+        }
+    }
+    .p-section__list ul:nth-child( 6 ) {
+        padding-bottom: 60px;
+    }
+ }
+

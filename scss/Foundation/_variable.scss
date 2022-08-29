@@ -1,0 +1,32 @@
+//bg-color
+//------------------------------
+$color-base-bg: #FFFDFA;
+$color-header-bg: #FFF7EF;
+$color-footer-bg: #96806B;
+
+// color
+// -----------------------------
+$color-gray: #707070;
+$color-text: #3C2A10;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-darkbrown: #3C2B1C;
+$color-lightbrowm: #F2EDE9;
+$color-lightgray: #F5F5F5;
+
+
+
+//breakpoint
+//-------------------------------
+@mixin breakpoint($point) {
+	@if $point == tablet {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+}

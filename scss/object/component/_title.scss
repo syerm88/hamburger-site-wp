@@ -1,0 +1,271 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.c-title {
+    &__fv {
+        position: absolute;
+        top: 119px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color-white;
+        padding: left;
+        padding-left: 25px;
+    }
+    &__map {
+    position: relative;
+    top: 10px;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 30px 0 30px 40px;
+    z-index: 15;
+    // h2::after{
+    //     position: absolute;
+    //     content: "";
+    //     width: 70px;
+    //     height: 3px;
+    //     background-color: $color-white;
+    //     top: 102px;
+    //     left: 40px;
+    //     }
+    }
+    &__section {
+    font-size: 4.1rem;
+    font-family: "Roboto";
+    color: $color-white;
+    margin-top: 11px;
+    margin-left: 15px;
+    &::after{
+        position: absolute;
+        top: 80px;
+        left: 15px;
+        content: "";
+        width: 33px;
+        height: 4px;
+        background-color: $color-white;
+        }
+    }
+}
+
+.c-title {
+    &__sidebar{
+        display: none;
+        font-size: 3.4rem;
+        font-family: "Roboto";
+    }
+}
+
+.c-title__menu {
+    padding-left: 46px;
+    padding-bottom: 40px;
+    padding-top: 34px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    h2 {
+        font-weight: bold;
+    }
+    &__burger {
+        padding-left: 46px;
+        padding-bottom: 40px;
+        font-weight: bold;
+        font-size: 2.4rem;
+    }
+}
+
+
+@include breakpoint(tablet) {
+    .p-fv__title {
+        display: none;
+    }
+}
+
+@include breakpoint(pc) {
+    .c-title {
+        &__sidebar{
+            padding-top: 82px;
+            padding-left: 46px;
+        }
+        &__fv {
+            top: 231px;
+        }
+        &__map {
+            padding-top: 51px;
+            padding-left: 74px;
+            h2::after{
+                position: absolute;
+                content: "";
+                width: 70px;
+                height: 3px;
+                background-color: $color-white;
+                top: 190px;
+                left: 74px;
+            }
+        }
+    }
+}
+
+//archive page
+//-----------------------------
+.c-title {
+    &__archive-main {
+        font-size: 3.6rem;
+        padding: 102px 0 0 37px;
+        color: $color-white;
+        font-weight: bold;
+        font-family: "Roboto";
+
+    }
+    &-sub__arcive-main {
+        padding-left: 37px;
+        color: $color-white;
+    }
+    &__section-figure {
+        color: $color-darkbrown;
+        font-size: 3.6rem;
+        padding-bottom: 25px;
+        font-weight: bold;
+    }
+}
+
+.c-title__menu__burger.is-open {
+    padding-top: 250px;
+}
+
+@include breakpoint (tablet) {
+    .c-title {
+        &__archive-main {
+            font-size: 6rem;
+            padding: 50px 0 50px 50px;
+        }
+        &-sub__arcive-main {
+            padding-left: 20px;
+        }
+    }
+}
+
+//archiveseach page
+//-----------------------------
+.c-title {
+    &__archiveseach-main {
+        font-size: 3.6rem;
+        padding: 102px 0 0 37px;
+        color: $color-white;
+        font-weight: bold;
+        font-family: "Roboto";
+
+    }
+    &-sub__arciveseach-main {
+        padding-left: 37px;
+        color: $color-white;
+    }
+}
+
+@include breakpoint (tablet) {
+    .c-title {
+        &__archiveseach-main {
+            font-size: 6rem;
+            padding: 50px 0 50px 50px;
+        }
+        &-sub__arciveseach-main {
+            padding-left: 20px;
+        }
+    }
+}
+
+//single page
+//-----------------------------
+.c-title {
+    &__single-main {
+        position: absolute;
+        font-size: 3.8rem;
+        color: $color-white;
+        font-weight: bold;
+        padding-left: 26px;
+    }
+    &__h2 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: $color-darkbrown;
+        padding-bottom: 30px;
+    }
+    &__h3 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: $color-darkbrown;
+        padding-bottom: 31px;
+    }
+    &__h4 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-darkbrown;
+        padding-bottom: 37px;
+    }
+    &__h5 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-darkbrown;
+        padding-bottom: 30px;
+    }
+    &__h6 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $color-darkbrown;
+        padding-bottom: 30px;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-title{
+        &__single-main {
+            padding-left: 86px;
+        }
+        &__h2 {
+            padding-bottom: 60px;
+        }
+        &__h3 {
+            padding-bottom: 60px;
+        }
+        &__h4 {
+            padding-bottom: 76px;
+        }
+        &__h5 {
+            padding-bottom: 60px;
+        }
+        &__h6 {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+@include breakpoint(pc) {
+    .c-title{
+        &__h2 {
+            font-size: 2.3rem;
+        }
+        &__h4 {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+//page
+//-----------------------------
+.c-title {
+    &__page-main {
+        position: absolute;
+        font-size: 3.8rem;
+        color: $color-white;
+        font-weight: bold;
+        padding-left: 45px;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-title {
+        &__page-main {
+            padding-left: 86px;
+        }
+    }
+}

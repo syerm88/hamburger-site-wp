@@ -1,0 +1,50 @@
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.6;
+	scroll-behavior: smooth;
+	max-width: 1990px;
+	font-weight: 400;
+	
+}
+
+body {
+	color: #707070;
+	font-size: 1.6rem;
+	font-family: "M PLUS 1p", "Noto Sans JP", sans-serif;
+	min-width: 375px;
+	width: 100%;
+	width: 100vw;
+	text-rendering: optimizeSpeed;
+	overflow-x: hidden;
+}
+
+body.is-open {
+	position: fixed;
+}
+
+img,
+object {
+	max-width: 100%;
+	height: auto;
+	border: none;
+	display: block;
+}
+
+a {
+	text-decoration: underline;
+	text-decoration: none;
+}
+
+
+	

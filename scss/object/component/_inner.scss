@@ -1,0 +1,55 @@
+@use "./../../foundation/variable" as *;
+
+// top page
+//-------------------------------
+.c-inner {
+    &__theme {
+        margin: 15px;
+    }
+    &__text {
+        color: #3C2A10;
+    }
+}
+
+// archive page
+//-------------------------------
+.c-inner__card  {
+    padding-bottom: 30px;
+    &__card img {
+        object-fit: cover;
+    }
+    &-button {
+        text-align: center;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-inner {
+        &__theme {
+        display: flex;
+        margin: 40px;
+       }
+        &__card {
+            display: flex;
+            width: 100%;
+        }
+        &__card img {
+            object-fit: cover;
+            min-width: 50%;
+        }   
+    }
+}  
+
+@include breakpoint(pc) {
+    .c-inner {
+        &__theme {
+            height: 1196px;
+            margin: 75px 69px 83px;
+        }
+        &__card {
+            display: flex;
+        }
+    }
+}
+
+

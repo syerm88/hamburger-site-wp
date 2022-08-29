@@ -1,0 +1,12 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.c-copy {
+    color: $color-white;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+
+}

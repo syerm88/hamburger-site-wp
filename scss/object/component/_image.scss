@@ -1,0 +1,104 @@
+@use "./../../foundation/variable" as *;
+
+
+//single page
+//-------------------
+.c-image {
+    padding-bottom: 30px;
+    &__single-menu {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    &__single-menu-reverse {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    &__single-burger {
+        width: 43%;
+        height: 72%;
+    }
+    &__single-burger-center {
+        height: 77%;
+        width: 78%;
+        margin: 0 auto;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-image {
+        padding-bottom: 60px;
+        &__single-menu {
+        min-height: 358px;
+        padding-bottom: 60px;
+        }
+        &__single-menu-reverse {
+            padding-bottom: 60px;
+        }
+        &__single-burger-center {
+            width: 81%;
+            height: 72%;
+            margin: 0 auto;
+            padding-bottom: 241px;
+        }
+    }
+}
+
+@include breakpoint(pc) {
+    .c-image__single-burger-center {
+        width: 43%;
+        padding-bottom: 60px;
+    }
+}
+
+
+// page
+//-------------------
+.c-image {
+    padding-bottom: 30px;
+    &__page-menu {
+        display: flex;
+        padding-bottom: 30px;
+    }
+    &__page-menu-reverse {
+        display: flex;
+        padding-bottom: 30px;
+    }
+
+    &__page-burger {
+        width: 43%;
+        height: 72%;
+    }
+    &__page-burger-center {
+        height: 77%;
+        width: 78%;
+        margin: 0 auto;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-image {
+        padding-bottom: 60px;
+        &__page-menu {
+        min-height: 358px;
+        padding-bottom: 60px;
+        }
+        &__page-menu-reverse {
+            padding-bottom: 60px;
+        }
+        &__page-burger-center {
+            width: 81%;
+            height: 72%;
+            margin: 0 auto;
+            padding-bottom: 241px;
+        }
+    }
+}
+
+@include breakpoint(pc) {
+    .c-image__page-burger-center {
+        width: 43%;
+        padding-bottom: 60px;
+    }
+
+}

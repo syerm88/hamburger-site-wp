@@ -1,0 +1,37 @@
+@use "./../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.l-header {
+    background-color: $color-header-bg;
+    z-index: 1;
+    &__logo {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 40px;
+    text-align: center;
+    color: $color-gray;
+    padding-bottom: 38px;
+    font-family: "Roboto";
+    }
+}
+
+@include breakpoint(pc) {
+    .l-header {
+        width: 80.9vw;
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 217px;
+    }
+    &__logo {
+        font-size: 6.4rem;
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-left: 65px;
+    }
+}
+}

@@ -1,0 +1,156 @@
+@use "./../../foundation/variable" as *;
+
+
+//top page
+//-----------------------------
+.c-text {
+    background-color: rgba(#fff, 0.8);
+    margin: 20px;
+    &__content {
+       min-height: 66px;
+       padding: 0 12.5px 12.5px 12.5px;
+       width: 100%;
+       box-sizing: border-box;
+   }
+   &__title {
+       font-size: 2.2rem;
+       padding: 7.5px 0 5.6px 12.5px;
+       font-weight: bold;
+   }
+   &__map {
+       position: relative;
+       color: $color-white;
+       z-index: 15;
+       line-height: 2;
+       padding: 40px 40px 50px 40px;
+       min-height: 356px;
+    } 
+    &__figure {
+        color: $color-darkbrown;
+        font-size: 1.6rem;
+        padding-bottom: 19px;
+    }
+}
+
+@include breakpoint(pc) {
+    .c-text{
+        &__map {
+            padding-top: 158px; 
+            padding-left: 74px;
+            width: 54%;
+        }
+        &__figure {  
+            padding-bottom: 70px;
+        }
+    }
+}
+
+//archive page
+//-----------------------------
+.c-text__h2 {
+    padding-bottom: 30px;
+    color: $color-darkbrown;
+}
+
+@include breakpoint(tablet) {
+    .c-text{
+        &__h2 {
+            padding-bottom: 60px;
+        }
+        &__single-menu {
+            min-height: 191px;
+        }
+        &__bold {
+            font-weight: bold;
+        }
+    }
+}
+
+//single page
+//-----------------------------
+.c-text {
+    &__single-menu {
+        padding-left: 10px;
+        height: 176px;
+        overflow: hidden;
+    }
+    &__single-menu-reverse {
+        padding-left: 10px;
+        height: 176px;
+        overflow: hidden;
+    }
+    &__bold {
+        font-weight: bold;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-text__single {
+        &-menu {
+        padding-left: 21px;
+        height: auto;
+        overflow: inherit;
+        }
+        &-menu-reverse {
+            padding-right: 21px;
+            height: auto;
+            overflow: inherit;
+        }
+    }
+}
+
+@include breakpoint(pc) {
+    .c-text {
+        &__single-menu {
+        overflow: inherit;
+        }
+        &__single-menu-reverse {
+            overflow: inherit;
+        }
+    }
+}
+
+
+//page
+//-----------------------------
+.c-text {
+    &__page-menu {
+        padding-left: 10px;
+        height: 176px;
+        overflow: hidden;
+    }
+    &__page-menu-reverse {
+        padding-left: 10px;
+        height: 176px;
+        overflow: hidden;
+    }
+    &__bold {
+        font-weight: bold;
+    }
+}
+
+@include breakpoint(tablet) {
+    .c-text__page {
+        &-menu {
+        padding-left: 21px;
+        height: auto;
+        overflow: inherit;
+        }
+        &-menu-reverse {
+            padding-right: 21px;
+            height: auto;
+            overflow: inherit;
+        }
+    }
+}
+
+@include breakpoint(pc) {
+    .c-text {
+        &__page-menu {
+        overflow: inherit;
+        }
+        &__page-menu-reverse {
+            overflow: inherit;
+        }
+    }
+}
