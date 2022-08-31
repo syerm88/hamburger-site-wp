@@ -1,22 +1,22 @@
-$(function () {
-  $('.c-button').on('click', function () { 
-    $(this).toggleClass('is-open');
-    $('.l-sidebar').toggleClass('is-open');
-    $('.l-sidebar-bg-cover').toggleClass('is-open');
-    $('body').toggleClass('is-open');
-    $('.c-title__menu__burger').toggleClass('is-open');
+jQuery(function () {
+  jQuery('.c-button').on('click', function () { 
+    jQuery(this).toggleClass('is-open');
+    jQuery('.l-sidebar').toggleClass('is-open');
+    jQuery('.l-sidebar-bg-cover').toggleClass('is-open');
+    jQuery('body').toggleClass('is-open');
+    jQuery('.c-title__menu__burger').toggleClass('is-open');
   });
 });
 
-$(window).on('resize', function() {
+jQuery(window).on('resize', function() {
   let $windowWidth = window.innerWidth;
 
   if($windowWidth > 1200){
-    $('.c-button').removeClass('is-open');
-    $('.l-sidebar').removeClass('is-open');
-    $('.l-sidebar-bg-cover').removeClass('is-open');
-    $('body').removeClass('is-open');
-    $('.c-title__menu__burger').removeClass('is-open');    
+    jQuery('.c-button').removeClass('is-open');
+    jQuery('.l-sidebar').removeClass('is-open');
+    jQuery('.l-sidebar-bg-cover').removeClass('is-open');
+    jQuery('body').removeClass('is-open');
+    jQuery('.c-title__menu__burger').removeClass('is-open');    
   };
 });
 

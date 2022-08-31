@@ -21,7 +21,7 @@
     &::before { /* 共通設定 */
       content: "";
       position: absolute;
-      top: 5%;
+      top: 9%;
       left: 94%;
       width: 4px; /* 棒の幅（太さ） */
       height: 30px; /* 棒の高さ */
@@ -30,7 +30,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5%;
+      top: 9%;
       left: 94%;
       width: 4px; /* 棒の幅（太さ） */
       height: 30px; /* 棒の高さ */

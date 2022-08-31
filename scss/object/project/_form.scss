@@ -4,6 +4,10 @@
 //top page
 //-----------------------------
 .p-seach-form {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.searchform {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
@@ -19,6 +23,7 @@
     margin-right: 10px;
     color: $color-gray;
     background-color: $color-white;
+    text-align: start;
     input.seach {
         width: 100%;
     }
@@ -34,7 +39,7 @@
         content: "";           
         width: 24px;          
         height: 24px;         
-        background: url(/img/seach.png) no-repeat center center / auto 100%; 
+        background: url(../img/seach.png) no-repeat center center / auto 100%; 
         display: inline-block; 
         position: absolute;    
         top: 11px;              
@@ -51,6 +56,7 @@
     }
     .p-seach-form {
         justify-content: center;
+        text-align: center;
     }
 }
 
