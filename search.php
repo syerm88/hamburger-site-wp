@@ -9,7 +9,7 @@
             </div>
             
 <?php if( have_posts() ) : ?>
-    <p class="p-search-snumber">『<?php echo get_search_query(); ?>』の検索結果:<?php echo $wp_query->found_posts; ?>件</p>
+    <p class="p-search-snumber"><?php echo get_search_query(); ?>の検索結果:<?php echo $wp_query->found_posts; ?>件</p>
     <?php while( have_posts() ) : the_post(); ?> 
     <section id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="c-card">
         <figure class="c-inner__card">

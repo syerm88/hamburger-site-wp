@@ -38,8 +38,8 @@
             echo '<p>コンテンツがありません。</p>';//7.ない時の処理
         endif; ?> 
 
-                <!-- pagination -->
-                        <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
+<!-- pagination -->
+        <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
                     </section>
             </main>
         </div>
