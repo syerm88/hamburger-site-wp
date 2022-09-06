@@ -76,8 +76,40 @@
     }
 }
 
-    
-    
+// WP
+.c-card__article a {
+        color: $color-gray;
+        background-color: $color-white;
+        border: 1px solid;
+        border-radius: 40px;
+        margin: 0 auto;
+        width: 163px;
+        height: 42px;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+}
+
+.c-inner__card img {
+    width: 100%;
+}
+
+@include breakpoint(tablet) {
+    .c-card__article a {
+        margin-bottom: 40px;
+    }
+    .c-inner__card img {
+        width: 43%; //値変更
+        height: auto; //100%からautoに変更
+    }
+}   
+@include breakpoint(pc) {
+    .c-card__article a {
+        margin-bottom: 0px;
+    }
+} 
+
+
     
 
 

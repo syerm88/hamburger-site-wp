@@ -4,10 +4,6 @@
 //single page
 //-----------------------------
 .c-item {
-    &__menu {
-    padding-left: 66px;
-    line-height: 2.3;
-    }
     &__code {
     padding: 50px 31.2px;
     background-color: $color-lightgray;
@@ -29,6 +25,11 @@
         padding: 28px 0 27px 30px;
         width: 68.4%;
     }
+}
+
+.sub-menu a {                 //wp化
+        padding-left: 66px;
+        line-height: 2.3;
 }
 
 @include breakpoint(tablet) {

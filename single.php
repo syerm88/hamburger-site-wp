@@ -1,79 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- reset.css destyle -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <title>Hamburger</title>
-</head>
-<body>
-    <div class="l-grid">
-
- <!-- header -->
-        <div class="l-grid__header">
-            <header class="l-header">
-                <div class="l-header__content">
-                    <button class="c-button">
-                        <span>Menu</span>
-                    </button>
-                        <h1 class="l-header__logo">Hamburger</h1>
-                    <form class="p-seach-form" action="#" method="post">
-                        <span class="search_box">
-                            <input class="p-seach-form-keyword" type="text">
-                        </span>
-                        <input class="p-button__seach" type="submit" name="submit" value="検索">
-                    </form>
-                </div>
-            </header>
-        </div>
-<!-- sidebar -->
-     <div class="l-grid__sidebar">
-        <aside class="l-sidebar">
-            <h2 class="c-title__sidebar">Menu</h2>
-            <ul class="p-side__menu">
-                <li><h3 class="c-title__menu__burger">バーガー</h3></li>
-                <li class="c-item__menu">ハンバーガー</li>
-                <li class="c-item__menu">チーズバーガー</li>
-                <li class="c-item__menu">テリヤキバーガー</li>
-                <li class="c-item__menu">アボカドバーガー</li>
-                <li class="c-item__menu">フィッシュバーガー</li>
-                <li class="c-item__menu">ベーコンバーガー</li>
-                <li class="c-item__menu">チキンバーガー</li>
-            </ul>
-            <ul class="p-side__menu">
-                <li><h3 class="c-title__menu">サイド</h3></li>
-                <li class="c-item__menu">ポテト</li>
-                <li class="c-item__menu">サラダ</li>
-                <li class="c-item__menu">ナゲット</li>
-                <li class="c-item__menu">コーン</li>
-            </ul>
-            <ul class="p-side__menu">
-                <li><h3 class="c-title__menu">ドリンク</h3></li>
-                <li class="c-item__menu">コーラ</li>
-                <li class="c-item__menu">ファンタ</li>
-                <li class="c-item__menu">オレンジ</li>
-                <li class="c-item__menu">アップル</li>
-                <li class="c-item__menu">紅茶 (Ice/Hot)</li>
-                <li class="c-item__menu">コーヒー (Ice/Hot)</li>
-            </ul>
-        </aside>
-        <div class="l-sidebar-bg-cover"></div>
-    </div>
+<?php get_header(); ?>
+<?php get_sidebar(); ?>
+ 
+<?php
+    if( have_posts() ) :
+        while( have_posts() ) :
+            the_post(); ?>
+            <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <h2 class="post__ttl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <ul class="post__meta">
+                    <li class="post__meta__item">
+                        <date class="post__meta__date"><?php echo get_the_date(); ?></date>
+                    </li>
+                    <li class="post__meta__item"><i class="fa fa-folder" aria-hidden="true"><?php the_category( ', ' ); ?></i></li>
+                    <li class="post__meta__item"><i class="fa fa-tag" aria-hidden="true"><?php the_tags( '' ); ?></i></li>
+                </ul>
+                <?php the_post_thumbnail(); ?>
+                <?php the_content(); ?>
+                <?php $args = array (
+                    'before' => '<div class="page-split">',
+                    'after' => '</div>',
+                    'link_before' => '<span>',
+                    'link_after' => '</span>',
+                    );
+                    wp_link_pages( $args );
+                ?>
+            </div>
+        <?php endwhile;
+    else :
+    ?><p>表示する記事がありません</p><?php
+    endif; ?>
+<
 <!-- main -->
         <div class="l-grid__main">
             <main class="l-main">
                 <!-- mainvisual -->
                     <div class="p-mainvisual__single">
                         <h2 class="c-title__single-main">h1 チーズバーガー</h2>
-                        <img src="/img/single-main.png" alt="">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-main.png" alt="">
                     </div>
 
                 <!-- article -->
@@ -93,28 +56,28 @@
                                     <p class="p-section__text-quote">出典元 : <a href="#">◯◯◯◯◯◯◯◯◯◯◯◯</a></p>
                                 </blockquote>
                                 <!-- このimgにはタグ入りますか？ -->
-                                <img class="c-image" src="/img/single-burger.jpg" alt="">
+                                <img class="c-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-burger.jpg" alt="">
                                 <section class="c-image__single-menu">
-                                    <img class="c-image__single-burger" src="/img/single-menu.jpg" alt="">
+                                    <img class="c-image__single-burger" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
                                     <p class="c-text__single-menu">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
                                 </section>
                                 <section class="c-image__single-menu-reverse">
                                     <p class="c-text__single-menu-reverse">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-                                    <img class="c-image__single-burger" src="/img/single-menu.jpg" alt="">
+                                    <img class="c-image__single-burger" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
                                 </section>
                                 <!-- このimgにはタグ入りますか？ -->
-                                <img class="c-image__single-burger-center" src="/img/single-menu.jpg" alt="">
+                                <img class="c-image__single-burger-center" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
                                 
                                 <section class="l-glid__image">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
-                                        <img src="/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-menu.jpg" alt="">    
                                 </section>
                                 <section class="p-section__list">
                                     <ol>
@@ -172,22 +135,5 @@
                 </section>
             </main>
         </div>
-                    
-<!-- footer -->
-    <div class="l-grid__footer">
-        <footer class="l-footer">
-            <ul class="c-link">
-                <li class="c-link__shop">ショップ情報</li>
-                <li class="c-link__history">ヒストリー</li>
-            </ul>
-            <p class="c-copy">
-                <small>copyright: Raise Tech</small>
-            </p>
-        </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
-</div>
-</body>
-</html>
+    <?php get_footer(); ?>  
+    

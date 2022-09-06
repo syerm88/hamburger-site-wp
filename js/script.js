@@ -5,6 +5,8 @@ jQuery(function () {
     jQuery('.l-sidebar-bg-cover').toggleClass('is-open');
     jQuery('body').toggleClass('is-open');
     jQuery('.c-title__menu__burger').toggleClass('is-open');
+    jQuery('.menu-item-has-children').toggleClass('is-open');
+    jQuery('.sub-menu').toggleClass('is-open');
   });
 });
 
@@ -17,6 +19,8 @@ jQuery(window).on('resize', function() {
     jQuery('.l-sidebar-bg-cover').removeClass('is-open');
     jQuery('body').removeClass('is-open');
     jQuery('.c-title__menu__burger').removeClass('is-open');    
+    jQuery('.menu-item-has-children').removeClass('is-open');    
+    jQuery('.sub-menu').removeClass('is-open');    
   };
 });
 

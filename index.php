@@ -5,7 +5,7 @@
             <main class="l-main">
                 <div class="p-fv">
                         <h2 class="c-title__fv">ダミーサイト</h2>
-                    <img src="img/front-page-main01.jpg" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/front-page-main01.jpg" alt="">
                 </div>
                 <article  class="p-theme">
                     <div class="c-inner__theme">
@@ -57,4 +57,6 @@
                 </article>
             </main>
         </div>
+    
         <?php get_footer(); ?>
+        

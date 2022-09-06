@@ -2,6 +2,7 @@
     //テーマサポート
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'post-thumbnails' );
 
     //タイトル出力
     function hamburger_title( $title ) {
@@ -20,6 +21,34 @@
         wp_enqueue_style( 'Noto+Sans+JP', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap', array(), );
         wp_enqueue_style('ress', '//cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css', array(), false, 'all');
         wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array('ress'), 'all' );
-        wp_enqueue_script( 'script', get_theme_file_uri() . '/js/script.js', array('jquery'));
+        wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
     }
     add_action('wp_enqueue_scripts', 'hamburger_script');
+
+    function hamburger_widgets_init() {
+        register_sidebar (
+            array(
+                'name'          => 'All Menu',
+                'id'            => 'menu_widget',
+                'description'   => 'メニューの一覧です',
+                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'after_widget'  => '</div>',
+                'before_title'  => '<h2 class="c-title__sidebar">',
+                'after_title'   => "</h2>\n",
+            )
+        );
+    }
+    add_action( 'widgets_init', 'hamburger_widgets_init' );
+
+    // unction my_pagenavi($args=array()){
+    //     if( !function_exists('wp_pagenavi') ) return;
+     
+    //     $defaults = array(
+    //         'before' => '<nav id="pager">',
+    //         'after' => '</nav>',
+    //         'wrapper_tag' => 'ul',
+    //         'wrapper_class' => 'pager-inner'
+    //     );
+    //     $args = is_array($args) ? array_merge($defaults, $args) : $args;
+    //     wp_pagenavi($args);
+    // }

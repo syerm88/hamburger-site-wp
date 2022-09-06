@@ -2,30 +2,59 @@
 
 //archive page
 //-----------------------------
-.p-pagination{
-    &__navi{
+.wp-pagenavi {
         margin: 0 auto;
         display: block;
         padding-top: 40px;
     }
-    &__number {
-        display: none;
-    }
-}
 
 @include breakpoint(tablet) {
-    .p-pagination__number {
+    .wp-pagenavi {
         margin: 75px auto;
         margin-bottom: 2px;
         display: block;
     }
-    .p-pagination__navi {
-        display: none;
-    }
 }
 
 @include breakpoint(pc) {
-    .p-pagination__number {
-        margin-top: 150px;
+    .wp-pagenavi {
+        margin: 150px;
     }
+}
+
+// WordPress
+
+.wp-pagenavi {
+    text-align: center;
+    span , a {
+        padding: 5px 10px;
+        line-height: 0;
+        margin: 8px;
+        font-weight: bold;
+    }
+}
+.wp-pagenavi .page {
+    border: 1px solid $color-darkbrown;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 2;
+}
+.wp-pagenavi .current {
+    border: 1px solid $color-darkbrown;
+    background-color: $color-darkbrown;
+    color: $color-white;
+}
+
+.wp-pagenavi .previouspostslink {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 15px;
+    vertical-align: middle;
+}
+.wp-pagenavi .nextpostslink {
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 15px;
+    vertical-align: middle;
 }

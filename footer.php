@@ -2,11 +2,11 @@
 <div class="l-grid__footer">
             <footer class="l-footer">
                 <ul class="c-link">
-                    <li class="c-link__shop">ショップ情報</li>
-                    <li class="c-link__history">ヒストリー</li>
+                    <a class="c-link__shop" href="<?php echo get_page_link(22); ?>">ショップ情報</a>
+                    <a class="c-link__history" href="<?php echo get_page_link(25); ?>">ヒストリー</a>
                 </ul>
                 <p class="c-copy">
-                    <small>copyright: Raise Tech</small>
+                    <small><?php bloginfo( 'name' ); ?>copyright: Raise Tech</small>
                 </p>
             </footer>
         </div>
