@@ -3,7 +3,7 @@
 
 //single page
 //-----------------------------
-.p-wrapper__single {
+.c-containar {
     padding: 30px 20px 177px 20px;
 }
 
@@ -12,7 +12,7 @@
         padding: 60px 60px 228px 60px;
     }
 }
-@include breakpoint(tablet) {
+@include breakpoint(pc) {
     .p-wrapper__single {
         padding: 60px 62.5px 353px 62.5px;
     }
@@ -29,8 +29,9 @@
         padding: 60px 60px 228px 60px;
     }
 }
-@include breakpoint(tablet) {
+@include breakpoint(pc) {
     .p-wrapper__page {
         padding: 60px 62.5px 353px 62.5px;
     }
 }
+

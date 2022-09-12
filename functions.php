@@ -14,7 +14,7 @@
             return $title;
         }
     add_filter( 'pre_get_document_title', 'hamburger_title' );
-
+    //head
     function hamburger_script() {
         wp_enqueue_style( 'M+PLUS+1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700;900&display=swap', array() );
         wp_enqueue_style( 'Roboto', '//fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', array() );
@@ -24,7 +24,7 @@
         wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
     }
     add_action('wp_enqueue_scripts', 'hamburger_script');
-
+    //sidebar
     function hamburger_widgets_init() {
         register_sidebar (
             array(
@@ -40,15 +40,6 @@
     }
     add_action( 'widgets_init', 'hamburger_widgets_init' );
 
-    // unction my_pagenavi($args=array()){
-    //     if( !function_exists('wp_pagenavi') ) return;
-     
-    //     $defaults = array(
-    //         'before' => '<nav id="pager">',
-    //         'after' => '</nav>',
-    //         'wrapper_tag' => 'ul',
-    //         'wrapper_class' => 'pager-inner'
-    //     );
-    //     $args = is_array($args) ? array_merge($defaults, $args) : $args;
-    //     wp_pagenavi($args);
-    // }
+    
+
+    

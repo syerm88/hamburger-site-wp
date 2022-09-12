@@ -2,8 +2,12 @@
 <div class="l-grid__footer">
             <footer class="l-footer">
                 <ul class="c-link">
-                    <a class="c-link__shop" href="<?php echo get_page_link(22); ?>">ショップ情報</a>
-                    <a class="c-link__history" href="<?php echo get_page_link(25); ?>">ヒストリー</a>
+                <?php
+                $args = array(
+                'menu' => 'ショップ情報', // 管理画面で作成したメニューの名前
+                );
+                wp_nav_menu($args);
+                ?>
                 </ul>
                 <p class="c-copy">
                     <small><?php bloginfo( 'name' ); ?>copyright: Raise Tech</small>
@@ -11,9 +15,6 @@
             </footer>
         </div>
     </div>
-        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="/js/script.js"></script> -->
         <?php wp_footer(); ?>
 </body>
 </html>

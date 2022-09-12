@@ -7,6 +7,7 @@ jQuery(function () {
     jQuery('.c-title__menu__burger').toggleClass('is-open');
     jQuery('.menu-item-has-children').toggleClass('is-open');
     jQuery('.sub-menu').toggleClass('is-open');
+    jQuery('.nojq').toggleClass('is-open');
   });
 });
 
@@ -21,6 +22,7 @@ jQuery(window).on('resize', function() {
     jQuery('.c-title__menu__burger').removeClass('is-open');    
     jQuery('.menu-item-has-children').removeClass('is-open');    
     jQuery('.sub-menu').removeClass('is-open');    
+    jQuery('.nojq').removeClass('is-open');    
   };
 });
 
