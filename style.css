@@ -1,5 +1,5 @@
 /*
-  Theme Name:     hamburger_site//テーマの名前
+  Theme Name:     Hamburger//テーマの名前
   Description:    テーマ開発//テーマの説明
   Version:        //バージョン
   Theme URI:      //テーマの URL
@@ -9,4 +9,6 @@
   License:        //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPLになります。）
   License URI:    //ライセンスの URL
   Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
+  Requires PHP: 7.4.1
+  Tested up to: 6.0.2
 */

@@ -12,6 +12,7 @@
             <?php $slug = $post->post_name; ?><!-- スラッグ名を取得 -->
             
             <?php the_post_thumbnail('full');?>
+            <?php wp_link_pages(); ?>
             <?php endwhile; ?>
             
             <?php endif; ?> 

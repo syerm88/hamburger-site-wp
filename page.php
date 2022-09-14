@@ -6,7 +6,7 @@
                 <!-- mainvisual -->
                     <div class="p-mainvisual__page">
                         <h2 class="c-title__page-main"><?php the_title(); ?></h2>
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-main.png" alt="top-images" class="p-page__top-images">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page-main.jpg" alt="top-images" class="p-page__top-images">
                     </div>
 
                 <!-- article -->
