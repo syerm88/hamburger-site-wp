@@ -272,4 +272,19 @@ cite a {
 .wp-block-media-text.has-media-on-the-right {
   padding-top: 30px;
 }
+
+.wp-post-image.lazyautosizes {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image {
+    width: calc(50% - var(--wp--style--unstable-gallery-gap, 16px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image {
+    width: calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px) * 0.66667);
+  }
+}
 /*# sourceMappingURL=utility.css.map */

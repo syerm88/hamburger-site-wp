@@ -8,7 +8,6 @@
                 <?php
                 $args = array(
                 'menu' => 'ショップ情報', // 管理画面で作成したメニューの名前
-                'theme_location' => 'footer',
                 );
                 wp_nav_menu($args);
                 ?>

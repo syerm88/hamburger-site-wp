@@ -6,7 +6,7 @@
     <main class="l-main">
         <div class="p-mainvisual">
                 <h2 class="c-title__archive-main">Menu:</h2>
-                <p class="c-title-sub__arcive-main">チーズバーガー</p>
+                <p class="c-title-sub__arcive-main"><?php echo single_cat_title(); ?></p>
         </div>
             <section class="p-section__figure">
             <h3 class="c-title__section-figure">小見出しが入ります</h3>

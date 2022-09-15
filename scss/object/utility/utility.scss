@@ -284,3 +284,20 @@ cite a {
  .wp-block-media-text.has-media-on-the-right {
     padding-top: 30px;
  }
+
+ .wp-post-image.lazyautosizes {
+    width: 100%;
+ }
+
+// このcssを効かせるには何か打ち消す作業必要か
+@include breakpoint(tablet) {
+    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image {
+        width: calc(50% - var(--wp--style--unstable-gallery-gap, 16px)/2);
+    }
+ }
+@include breakpoint(pc) {
+    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image {
+        width: calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px)*0.66667);
+    }
+ }
+
