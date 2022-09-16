@@ -14,6 +14,7 @@
     display: block;
     text-align: center;
     padding-top: 10px;
+    line-height: 21px;
 }
 
 .c-inner__card img {
@@ -23,6 +24,9 @@ width: 100%;
 @include breakpoint(tablet) {
 .c-card__article a {
     margin-bottom: 40px;
+    width: 292px;
+    height: 76px;
+    line-height: 48px;
 }
 .c-inner__card img {
     width: 43%; //値変更
@@ -197,26 +201,31 @@ table {
     color: $color-gray;
 }
 .wp-block-group__inner-container ul {
+    margin-top: 60px;
     margin-bottom: 30px;
     margin-left: 31px;
 }
-
-
-.wp-container-43 ul {
-    padding-left: 42px;
+.wp-container-9.wp-block-group ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 42px;
 }
-
-.wp-container-45 ul {
+.wp-container-11.wp-block-group ul {
+    margin-top: 30px;
     margin-bottom: 60px;
+    margin-left: 31px;
 }
-.wp-container-47 ul {
-    padding-left: 42px;
+.wp-container-13.wp-block-group ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 42px;
+}
+.wp-container-14.wp-block-group ul {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 31px;
 }
 
-.wp-container-48 ul {
-    margin-bottom: 60px;
-  
-}
 
 cite a {
     border-bottom: 1px solid;
@@ -288,16 +297,24 @@ cite a {
  .wp-post-image.lazyautosizes {
     width: 100%;
  }
-
+ .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+    width: 100%;
+}
 // このcssを効かせるには何か打ち消す作業必要か
 @include breakpoint(tablet) {
-    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image {
+    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
         width: calc(50% - var(--wp--style--unstable-gallery-gap, 16px)/2);
+        gap: 20px;
     }
  }
 @include breakpoint(pc) {
-    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image {
+    .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
         width: calc(33.33% - var(--wp--style--unstable-gallery-gap, 16px)*0.66667);
     }
  }
 
+ .wp-container-7 wp-block-gallery-6 wp-block-gallery has-nested-images columns-default is-cropped {
+    padding-bottom: 60px;
+ }
+
+ 
