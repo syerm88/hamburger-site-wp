@@ -11,16 +11,16 @@
                     <div class="c-inner__theme">
                         <section class="p-section__TakeOut">
                             <div class="c-title__section">
-                                <h3>Take Out</h3>
+                                <h3><a href="<?php echo home_url('/category/takeout/'); ?>">Take Out</a></h3>
                             </div>
                             <div class="c-inner__text">
                                 <ul class="c-text">
-                                    <li class="c-text__title">Take OUT</li>
+                                <a href="<?php echo home_url('/category/takeout/'); ?>" class="c-text__title">Take OUT</a>
                                     <li class="c-text__content">
                                         当店のテイクアウトで利用できる商品を掲載しています店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</li>
                                 </ul>
                                 <ul class="c-text">
-                                    <li class="c-text__title">Take OUT</li>
+                                <a href="<?php echo home_url('/category/takeout/'); ?>" class="c-text__title">Take OUT</a>
                                     <li class="c-text__content">
                                         当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</li>
                                 </ul>
@@ -28,17 +28,17 @@
                         </section>
                         <section class="p-section__EatIn">
                             <div class="c-title__section">
-                                <h3>Eat In</h3>
+                                <h3><a href="<?php echo home_url('/category/eatin/'); ?>">Eat In</a></h3>
                             </div>
                             <div class="c-inner__text">
                                 <ul class="c-text">
-                                    <li class="c-text__title">Eat In</li>
+                                    <a href="<?php echo home_url('/category/eatin/'); ?>" class="c-text__title">Eat In</a>
                                     <li class="c-text__content">
                                         店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                                     </li>
                                 </ul>
                                 <ul class="c-text">
-                                    <li class="c-text__title">Eat In</li>
+                                    <a href="<?php echo home_url('/category/eatin/'); ?>" class="c-text__title">Eat In</a>
                                     <li class="c-text__content">
                                         店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                                     </li>
