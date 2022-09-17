@@ -1,8 +1,6 @@
 <!-- footer -->
 <div class="l-grid__footer">
             <footer class="l-footer">
-
-            
                 <ul class="c-link">
                 <!-- <?php wp_nav_menu(array('theme_location' =>'footermenu')); ?> -->
                 <?php
