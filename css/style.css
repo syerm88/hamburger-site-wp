@@ -952,7 +952,7 @@ cite a {
 @media (min-width: 1200px) {
   .c-inner__theme {
     height: 1196px;
-    margin: 75px 69px 83px;
+    margin: 120px 70px 134px;
   }
   .c-inner__card {
     display: flex;
@@ -1240,8 +1240,9 @@ cite a {
   box-sizing: border-box;
 }
 .c-text__title {
+  display: inline-block;
   font-size: 2.2rem;
-  padding: 7.5px 0 5.6px 12.5px;
+  padding: 12px 0 9px 12.5px;
   font-weight: bold;
 }
 .c-text__map {
@@ -1803,11 +1804,11 @@ input {
 @media (min-width: 1200px) {
   .p-section__TakeOut {
     height: auto;
-    margin-right: 50px;
+    margin-right: 25px;
   }
   .p-section__EatIn {
     height: auto;
-    margin-left: 50px;
+    margin-left: 25px;
   }
 }
 .p-section__figure {
