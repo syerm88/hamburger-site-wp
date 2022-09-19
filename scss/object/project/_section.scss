@@ -39,11 +39,11 @@
 
 @include breakpoint(pc) {
     .p-section__TakeOut {
-        height: auto;
+        // height: auto;
         margin-right: 25px; 
     }
     .p-section__EatIn {
-        height: auto;
+        // height: auto;
         margin-left: 25px;
     }
 }

@@ -15,12 +15,12 @@
                             </div>
                             <div class="c-inner__text">
                                 <ul class="c-text">
-                                <a href="<?php echo esc_url(home_url('/category/takeout/')); ?>" class="c-text__title">Take OUT</a>
+                                    <li><a href="<?php echo esc_url(home_url('/category/takeout/')); ?>" class="c-text__title">Take OUT</a><li>
                                     <li class="c-text__content">
                                         当店のテイクアウトで利用できる商品を掲載しています店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</li>
                                 </ul>
                                 <ul class="c-text">
-                                <a href="<?php echo esc_url(home_url('/category/takeout/')); ?>" class="c-text__title">Take OUT</a>
+                                    <li><a href="<?php echo esc_url(home_url('/category/takeout/')); ?>" class="c-text__title">Take OUT</a><li>
                                     <li class="c-text__content">
                                         当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</li>
                                 </ul>
@@ -32,13 +32,13 @@
                             </div>
                             <div class="c-inner__text">
                                 <ul class="c-text">
-                                    <a href="<?php echo esc_url(home_url('/category/eatin/')); ?>" class="c-text__title">Eat In</a>
+                                    <li><a href="<?php echo esc_url(home_url('/category/eatin/')); ?>" class="c-text__title">Eat In</a><li>
                                     <li class="c-text__content">
                                         店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                                     </li>
                                 </ul>
                                 <ul class="c-text">
-                                    <a href="<?php echo esc_url(home_url('/category/eatin/')); ?>" class="c-text__title">Eat In</a>
+                                    <li><a href="<?php echo esc_url(home_url('/category/eatin/')); ?>" class="c-text__title">Eat In</a><li>
                                     <li class="c-text__content">
                                         店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです
                                     </li>

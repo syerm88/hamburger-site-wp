@@ -951,7 +951,6 @@ cite a {
 }
 @media (min-width: 1200px) {
   .c-inner__theme {
-    height: 1196px;
     margin: 120px 70px 134px;
   }
   .c-inner__card {
@@ -1803,11 +1802,9 @@ input {
 }
 @media (min-width: 1200px) {
   .p-section__TakeOut {
-    height: auto;
     margin-right: 25px;
   }
   .p-section__EatIn {
-    height: auto;
     margin-left: 25px;
   }
 }
