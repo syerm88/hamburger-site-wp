@@ -1,6 +1,11 @@
 @use "./variable" as *;
 
 // WP
+//sidebar
+.menu-item-has-children.menu-item-29.is-open {
+    padding-top: 230px
+}
+
 //archive page
 //-----------------------------
 .c-card__article a {
@@ -22,21 +27,21 @@ width: 100%;
 }
 
 @include breakpoint(tablet) {
-.c-card__article .c-card__link a {
-    margin-bottom: 40px;
-    width: 292px;
-    height: 76px;
-    line-height: 48px;
-}
-.c-inner__card img {
-    width: 43%; //値変更
-    height: auto; //100%からautoに変更
-}
+    .c-card__article .c-card__link a {
+        margin-bottom: 40px;
+        width: 292px;
+        height: 76px;
+        line-height: 48px;
+    }
+    .c-inner__card img {
+        width: 43%; //値変更
+        height: auto; //100%からautoに変更
+    }
 }   
 @include breakpoint(pc) {
-.c-card__article a {
-    margin-bottom: 0px;
-}
+    .c-card__article a {
+        margin-bottom: 0px;
+    }
 } 
 
 .p-search-snumber {
