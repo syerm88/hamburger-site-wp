@@ -426,6 +426,10 @@ th {
   font-weight: bold;
 }
 
+.menu-cateogrymenu-container .menu-item-has-children.menu-item-29.is-open {
+  padding-top: 230px;
+}
+
 .c-card__article a {
   color: #707070;
   background-color: #ffffff;
@@ -794,7 +798,7 @@ cite a {
 .l-sidebar.is-open::before { /* 共通設定 */
   content: "";
   position: absolute;
-  top: 9%;
+  top: 4%;
   left: 94%;
   width: 4px; /* 棒の幅（太さ） */
   height: 30px; /* 棒の高さ */
@@ -803,7 +807,7 @@ cite a {
 .l-sidebar.is-open::after {
   content: "";
   position: absolute;
-  top: 9%;
+  top: 4%;
   left: 94%;
   width: 4px; /* 棒の幅（太さ） */
   height: 30px; /* 棒の高さ */
